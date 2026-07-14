@@ -1,2 +1,31 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  /* 2. Register your custom font family */
+  --font-cinzel: "Cinzel", serif;
+
+  /* Your custom colors */
+  --color-lightBlackisBrown: #26211e;
+  --color-blackishBrown: #161311;
+  --color-lightBrown: #dfb26c;
+  --color-warmBrown: #e09260;
+  --color-green: #a2b574;
+  --color-lightRed: #e37874;
+}
+
+
+
+#bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(circle at 1px 1px, var(--color-lightBrown) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: center center;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+}

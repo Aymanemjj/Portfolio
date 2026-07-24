@@ -1,0 +1,47 @@
+{
+    "programing": [
+        {
+            "title": "Marble",
+            "description": "A web app for art and artists to roam free",
+            "image": "marble_pic1.png",
+            "link": "https://github.com/Aymanemjj/Marble",
+            "tech": ["Vue", "Pinia", "JavaScript", "Tailwind", "PHP", "Laravel", "MariaDB"]
+        },
+        {
+            "title": "EasyColoc",
+            "description": "A web app for housing and rental",
+            "image": "",
+            "link": "https://github.com/Aymanemjj/EasyColoc",
+            "tech": ["Vue", "JavaScript", "Tailwind", "PHP", "Laravel", "MariaDB"]
+        },
+        {
+            "title": "Web4Jobs LeaderBoard",
+            "description": "A Web4Jobs platform for gamification of the students progress",
+            "image": "",
+            "link": "",
+            "tech": ["React", "Zustand", "TypeScript", "Tailwind", "PHP", "Laravel", "MariaDB", "Redis"]
+        },
+        {
+            "title": "Simple 3d",
+            "description": "A simple 3d Trinagle writen in Java",
+            "image": "",
+            "link": "",
+            "tech": ["Java"]
+        }
+    ],
+    "other": [
+        {
+            "title": "Zima NAS",
+            "description": "A home media server setup with Jellyfin and automated backups",
+            "image": "",
+            "link": "",
+            "tech": ["ZimaOS", "Docker"]
+        },
+        {
+            "title": "3D low Poly",
+            "description": "A simple 3d low poly model",
+            "image": "",
+            "link": ""
+        }
+    ]
+}

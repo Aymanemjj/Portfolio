@@ -3,45 +3,103 @@
         {
             "title": "Marble",
             "description": "A web app for art and artists to roam free",
-            "image": "marble_pic1.png",
+            "preview": {
+                "type": "image",
+                "thumbnail": "marble/thumbnail.png",
+                "images": ["marble_pic1.png"],
+                "alt": ""
+            },
             "link": "https://github.com/Aymanemjj/Marble",
-            "tech": ["Vue", "Pinia", "JavaScript", "Tailwind", "PHP", "Laravel", "MariaDB"]
-        },
-        {
-            "title": "EasyColoc",
-            "description": "A web app for housing and rental",
-            "image": "",
-            "link": "https://github.com/Aymanemjj/EasyColoc",
-            "tech": ["Vue", "JavaScript", "Tailwind", "PHP", "Laravel", "MariaDB"]
-        },
-        {
-            "title": "Web4Jobs LeaderBoard",
-            "description": "A Web4Jobs platform for gamification of the students progress",
-            "image": "",
-            "link": "",
-            "tech": ["React", "Zustand", "TypeScript", "Tailwind", "PHP", "Laravel", "MariaDB", "Redis"]
+            "tools": ["Vue", "Pinia", "JavaScript", "Tailwind", "PHP", "Laravel", "MariaDB"]
         },
         {
             "title": "Simple 3d",
             "description": "A simple 3d Trinagle writen in Java",
-            "image": "",
+            "preview": {
+                "type": "image",
+                "thumbnail": "simple3d/thumbnail.png",
+                "images": [],
+                "alt": ""
+            },
+            "link": "https://github.com/Aymanemjj/Java-3d-viewer",
+            "tools": ["Java"]
+        },
+        {
+            "title": "ZimaBlue",
+            "description": "A home NAS setup using TrueNas",
+            "preview": {
+                "type": "image",
+                "thumbnail": "home_nas/thumbnail.png",
+                "images": [],
+                "alt": ""
+            },
             "link": "",
-            "tech": ["Java"]
+            "tools": ["TrueNas", "Linux", "Docker", "Tailscale"]
+        },
+        {
+            "title": "EasyColoc",
+            "description": "",
+            "preview": {
+                "type": "image",
+                "thumbnail": "easycoloc/thumbnail.png",
+                "images": [],
+                "alt": ""
+            },
+            "link": "https://github.com/Aymanemjj/EasyColoc",
+            "tools": ["PHP", "Laravel", "UML"]
+        },
+        {
+            "title": "Youtube data pipe_line",
+            "description": "youtube chanel videos data pipeline",
+            "preview": {
+                "type": "image",
+                "thumbnail": "youtube_pipeline/thumbnail.png",
+                "images": [],
+                "alt": ""
+            },
+            "link": "https://github.com/Aymanemjj/pipeline_youtube",
+            "tools": ["Python", "Pandas", "Docker", "Apache/Airflow"]
         }
     ],
-    "other": [
-        {
-            "title": "Zima NAS",
-            "description": "A home media server setup with Jellyfin and automated backups",
-            "image": "",
-            "link": "",
-            "tech": ["ZimaOS", "Docker"]
-        },
+    "side": [
+
         {
             "title": "3D low Poly",
             "description": "A simple 3d low poly model",
-            "image": "",
-            "link": ""
+            "preview": {
+                "type": "3d_scene",
+                "thumbnail": "loveChan/thumbnail.png",
+                "images": [],
+                "model": "loveChan/model.glb",
+                "alt": "3D low poly model"
+            },
+            "link": "https://cara.app/post/9eae5135-6700-4652-a45d-d30d4367e433",
+            "tools": ["Blender"]
+        },
+        {
+            "title": "Outer Wildes",
+            "description": "Outer wilds fan-poster",
+            "preview": {
+                "type": "image",
+                "thumbnail": "outerwildes_poster/thumbnail.png",
+                "images": [],
+                "alt": "Outer wildes"
+            },
+            "link": "https://cara.app/post/2dcd4062-a52d-42cb-9ae7-de40f465f08b",
+            "tools": ["Adobe Photoshop"]
+        },
+        {
+            "title": "Vending Machine",
+            "description": "Toon-shader vending machine",
+            "preview": {
+                "type": "3D_scene",
+                "thumbnail": "vending-machine/thumbnail.png",
+                "images": [],
+                "model": "loveChan/model.glb",
+                "alt": "Vending machine"
+            },
+            "link": "https://cara.app/post/3387de5b-f973-4e02-8ba4-92127777b6ec",
+            "tools": ["Blender"]
         }
     ]
 }

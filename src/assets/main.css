@@ -2,18 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  /* 2. Register your custom font family */
   --font-cinzel: "Cinzel", serif;
   --font-jetbrains: "JetBrains Mono", monospace;
+  
+   /*dark theme*/
+  --color-pd-background: #161311;
+  --color-pd-text: #E6DFD3;
+  --color-pd-primary: #A2B574;
+  --color-pd-secondary: #E09260;
+  --color-pd-ascent: #26211E;
+  --color-pd-warning: #E37874;
 
-  /* Your custom colors */
-  --color-p-lightBlackisBrown: #26211e;
-  --color-p-blackishBrown: #161311;
-  --color-p-lightBrown: #dfb26c;
-  --color-p-warmBrown: #e09260;
-  --color-p-green: #a2b574;
-  --color-p-lightRed: #e37874;
+   /*light theme*/
+  --color-pl-backgroun: #E5D8BE;
+  --color-pl-text: #2D2622;
+  --color-pl-primary: #4B5E37;
+  --color-pl-secondary: #A86439;
+  --color-pl-ascent: #D1C5B2;
+  --color-pl-warning: #A6464B;
 }
 
 

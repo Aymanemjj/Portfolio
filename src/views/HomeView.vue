@@ -59,12 +59,12 @@ watch(selected, (newVal) => {
                 <div class="w-full text-left">
                     <h1 class="font-bold text-3xl text-pl-primary dark:text-pd-primary">Hallo!</h1>
                     <h2 class="text-pl-text dark:text-pd-text font-thin">
-                        I am <span class="font-bold">Mohamed Aymane Jaafouri</span>, a full-stack web developer <span class="font-bold text-pl-primary dark:text-pd-primary underline">based in Morocco</span>, interested in cs among other fields like design and 3d modeling .
+                        I am <span class="font-bold">Mohamed Aymane Jaafouri</span>, a full-stack web developer <span class="font-bold text-pl-primary dark:text-pd-primary underline">based in Morocco</span>, interested in cs among other fields like design and 3d modeling.
                     </h2>
                 </div>
                 <div class="w-full xl:w-2/3 flex flex-col  gap-8">
-                    <div class="text-pl-secondary dark:text-pd-secondary font-bold flex justify-center text-2xl">
-                        <b>&gt; cd ~/</b>
+                    <div class="text-pl-secondary dark:text-pd-secondary font-bold flex justify-left text-2xl">
+                        <b>&gt; Machine@Aymane cd ~/</b>
                         <b>
                             <span>{{ displayText }}</span>
                             <span v-if="!displayText" class="animate-pulse">_</span>

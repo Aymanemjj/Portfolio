@@ -13,16 +13,16 @@
             "tools": ["Vue", "Pinia", "JavaScript", "Tailwind", "PHP", "Laravel", "MariaDB"]
         },
         {
-            "title": "Simple 3d",
-            "description": "A simple 3d Trinagle writen in Java",
+            "title": "Gofortune",
+            "description": "A fortune teller in golang",
             "preview": {
                 "type": "image",
-                "thumbnail": "simple3d/thumbnail.png",
+                "thumbnail": "gofortune/thumbnail.png",
                 "images": [],
                 "alt": ""
             },
-            "link": "https://github.com/Aymanemjj/Java-3d-viewer",
-            "tools": ["Java"]
+            "link": "https://github.com/Aymanemjj/gofortune",
+            "tools": ["Go"]
         },
         {
             "title": "ZimaBlue",
@@ -37,16 +37,16 @@
             "tools": ["TrueNas", "Linux", "Docker", "Tailscale"]
         },
         {
-            "title": "EasyColoc",
-            "description": "",
+            "title": "ML_client_clasifier",
+            "description": "A machin learning model for clasifying clients based on there RFM",
             "preview": {
                 "type": "image",
-                "thumbnail": "easycoloc/thumbnail.png",
+                "thumbnail": "ml_client_classification/thumbnail.png",
                 "images": [],
                 "alt": ""
             },
-            "link": "https://github.com/Aymanemjj/EasyColoc",
-            "tools": ["PHP", "Laravel", "UML"]
+            "link": "https://github.com/Aymanemjj/ML_Classification_of_clients",
+            "tools": ["Python", "Pandas", "Seaborn", "Scikit-learn"]
         },
         {
             "title": "Youtube data pipe_line",
@@ -81,7 +81,7 @@
             "description": "Outer wilds fan-poster",
             "preview": {
                 "type": "image",
-                "thumbnail": "outerwildes_poster/thumbnail.png",
+                "thumbnail": "posters/outer_wildes.jpg",
                 "images": [],
                 "alt": "Outer wildes"
             },
@@ -93,12 +93,25 @@
             "description": "Toon-shader vending machine",
             "preview": {
                 "type": "3D_scene",
-                "thumbnail": "vending-machine/thumbnail.png",
+                "thumbnail": "vendingMachine/thumbnail.jpg",
                 "images": [],
                 "model": "loveChan/model.glb",
                 "alt": "Vending machine"
             },
             "link": "https://cara.app/post/3387de5b-f973-4e02-8ba4-92127777b6ec",
+            "tools": ["Blender"]
+        },
+        {
+            "title": "Donut",
+            "description": "Donut",
+            "preview": {
+                "type": "3D_scene",
+                "thumbnail": "donut/thumbnail.jpg",
+                "images": [],
+                "model": "loveChan/model.glb",
+                "alt": "Donut"
+            },
+            "link": "https://cara.app/post/10902a6f-ef8a-4237-9f16-b55f13d38c93",
             "tools": ["Blender"]
         }
     ]

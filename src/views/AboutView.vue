@@ -1,11 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-    <main class="max-w-3xl mx-auto flex flex-col gap-16 px-4">
+    <main class="max-w-4xl mx-auto flex flex-col gap-16 px-4">
         <!-- about me -->
         <section class="flex gap-4">
             <div class="h-32 sm:h-64 lg:h-80 shrink-0">
-                <img src="@/assets/pfp.png" alt="pfp" class="h-full w-auto object-contain"/>
+                <img
+                    src="@/assets/pfp.png"
+                    alt="pfp"
+                    class="h-full w-auto object-contain"
+                />
             </div>
             <div class="flex flex-col gap-4 text-left justify-end">
                 <b class="text-pl-primary dark:text-pd-primary text-2xl"
@@ -14,7 +18,7 @@
                 <p class="text-pl-text dark:text-pd-text">
                     hi! i'm Aymane, a full-stack web developer based in morocco,
                     interested in cs among other fields like design and 3d
-                    modeling
+                    modeling.
                 </p>
             </div>
         </section>
@@ -31,7 +35,7 @@
                     >
                         languages:
                     </h3>
-                    <p>ts / sql / python / php</p>
+                    <p>ts / python / php / golang / c</p>
                 </div>
                 <div class="flex gap-4">
                     <h3
@@ -39,7 +43,23 @@
                     >
                         frameworks:
                     </h3>
-                    <p>vue / react / laravel</p>
+                    <p>vue_js / react_js / laravel</p>
+                </div>
+                <div class="flex gap-4">
+                    <h3
+                        class="text-pl-secondary dark:text-pd-secondary text-xl w-40 shrink-0"
+                    >
+                        databases:
+                    </h3>
+                    <p>mysql / postgrese_sql / redis</p>
+                </div>
+                <div class="flex gap-4">
+                    <h3
+                        class="text-pl-secondary dark:text-pd-secondary text-xl w-40 shrink-0"
+                    >
+                        data & ml:
+                    </h3>
+                    <p>pandas / numpy / matplotlib / seaborn / schikit_learn</p>
                 </div>
                 <div class="flex gap-4">
                     <h3
@@ -47,7 +67,7 @@
                     >
                         dev tools:
                     </h3>
-                    <p>docker / git / linux</p>
+                    <p>docker / git / airflow / linux</p>
                 </div>
                 <div class="flex gap-4">
                     <h3
@@ -60,19 +80,31 @@
             </div>
         </section>
         <!-- Experience -->
-        
+
         <section class="flex flex-col gap-4">
             <b class="text-pl-primary dark:text-pd-primary text-2xl"
-                >Experience</b
+                >experience</b
             >
             <div class="flex flex-col gap-3 text-pl-text dark:text-pd-text">
                 <div class="flex gap-4">
                     <h3
                         class="text-pl-secondary dark:text-pd-secondary text-xl shrink-0"
                     >
-                        Yool Education:
+                        <a
+                            href="https://www.yool.education/"
+                            class="hover:underline"
+                            >yool education:</a
+                        >
                     </h3>
-                    <p>2 month long intrenship, working on a real production level project.</p>
+                    <div>
+                        <p>
+                            2 month long intrenship, working on a real
+                            production level project, of a centralized
+                            gamification inbetween a diverse collection of other
+                            platforms.
+                        </p>
+                        <p><span class="underline">technologies:</span> ts/ php / laravel / react_js / redis / docker</p>
+                    </div>
                 </div>
             </div>
         </section>

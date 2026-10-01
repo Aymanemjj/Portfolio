@@ -6,7 +6,7 @@
         <section class="flex gap-4">
             <div class="h-32 sm:h-64 lg:h-80 shrink-0">
                 <img
-                    src="@/assets/pfp.png"
+                    src="@/assets/pfp.webp"
                     alt="pfp"
                     class="h-full w-auto object-contain"
                 />

@@ -53,7 +53,14 @@ watch(selected, (newVal) => {
     <main class="flex justify-center items-center">
         <div class="p-4 flex sm:flex-row flex-col gap-4 bg-pl-ascent dark:bg-pd-ascent xl:w-2/3">
             <div class="sm:h-64 lg:h-80 xl:h-96 shrink-0">
-                <img src="@/assets/cat.gif" alt="cat" class="h-full w-auto object-contain text-pl-text dark:text-pd-text"/>
+              <video
+                src="@/assets/cat.webm"
+                class="h-full w-auto object-contain text-pl-text dark:text-pd-text"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
             </div>
             <div class="w-full  p-2 flex flex-col justify-between items-center gap-4">
                 <div class="w-full text-left">

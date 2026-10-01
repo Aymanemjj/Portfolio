@@ -37,7 +37,7 @@
             "tools": ["TrueNas", "Linux", "Docker", "Tailscale"]
         },
         {
-            "title": "ML_client_clasifier",
+            "title": "ML_client_classifier",
             "description": "A machin learning model for clasifying clients based on there RFM",
             "preview": {
                 "type": "image",

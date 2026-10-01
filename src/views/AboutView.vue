@@ -13,7 +13,7 @@
             </div>
             <div class="flex flex-col gap-4 text-left justify-end">
                 <b class="text-pl-primary dark:text-pd-primary text-2xl"
-                    >about me</b
+                    >About me</b
                 >
                 <p class="text-pl-text dark:text-pd-text">
                     hi! i'm Aymane, a full-stack web developer based in morocco,
@@ -26,7 +26,7 @@
         <!-- technologies -->
         <section class="flex flex-col gap-4">
             <b class="text-pl-primary dark:text-pd-primary text-2xl"
-                >technologies</b
+                >Technologies</b
             >
             <div class="flex flex-col gap-3 text-pl-text dark:text-pd-text">
                 <div class="flex gap-4">
@@ -57,10 +57,14 @@
                     <h3
                         class="text-pl-secondary dark:text-pd-secondary text-xl w-40 shrink-0"
                     >
-                        data & ml:
+                        data & AI:
                     </h3>
                     <p>pandas / numpy / matplotlib / seaborn / schikit_learn</p>
+
+                    <!--                     <p>MachineLearning (Classification, Regression, Clustering) / Deep Learning (TensorFlow, Keras, PyTorch) / NLP / Computer Vision / Analyse de donnees / Evaluation de mode LES</p>
+ -->
                 </div>
+
                 <div class="flex gap-4">
                     <h3
                         class="text-pl-secondary dark:text-pd-secondary text-xl w-40 shrink-0"
@@ -83,7 +87,7 @@
 
         <section class="flex flex-col gap-4">
             <b class="text-pl-primary dark:text-pd-primary text-2xl"
-                >experience</b
+                >Experience</b
             >
             <div class="flex flex-col gap-3 text-pl-text dark:text-pd-text">
                 <div class="flex gap-4">
@@ -93,17 +97,39 @@
                         <a
                             href="https://www.yool.education/"
                             class="hover:underline"
-                            >yool education:</a
+                            >Yool Education:</a
                         >
                     </h3>
-                    <div>
-                        <p>
-                            2 month long intrenship, working on a real
-                            production level project, of a centralized
-                            gamification inbetween a diverse collection of other
-                            platforms.
-                        </p>
-                        <p><span class="underline">technologies:</span> ts/ php / laravel / react_js / redis / docker</p>
+                    <div class="space-y-2">
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>
+                                <span class="font-bold">Architecture:</span>
+                                Solo-designed a scalable platform integrating 7
+                                platforms, starting from the UML diagrams, with
+                                a structure that makes adding more
+                                straightforward.
+                            </li>
+                            <li>
+                                <span class="font-bold"
+                                    >Full-stack development:</span
+                                >
+                                Built the React.js front office and Laravel 11
+                                back office from scratch.
+                            </li>
+                            <li>
+                                <span class="font-bold"
+                                    >Gamification and deployment:</span
+                                >
+                                Implemented background jobs for points,
+                                achievements, and leaderboard snapshots, and
+                                Dockerized the entire application.
+                            </li>
+                            <li>
+                                <span class="font-bold underline">Technologies:</span>
+                                TypeScript / PHP / Laravel / React.js / Redis /
+                                Docker
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -112,7 +138,7 @@
         <!-- resources -->
         <section class="flex flex-col gap-4">
             <b class="text-pl-primary dark:text-pd-primary text-2xl"
-                >resources</b
+                >Resources</b
             >
             <div class="flex flex-col gap-3 text-pl-text dark:text-pd-text">
                 <div class="flex gap-4">

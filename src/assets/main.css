@@ -27,14 +27,14 @@
 
 
 
-/*#bg {
+/* #bg {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: radial-gradient(circle at 1px 1px, var(--color-p-lightBrown) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, var(--color-pd-secondary) 1px, transparent 0);
   background-size: 40px 40px;
   background-position: center center;
-}*/
+} */
 
 #app {
   position: relative;

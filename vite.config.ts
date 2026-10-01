@@ -21,6 +21,7 @@ export default defineConfig({
       webp: { lossless: false, quality: 80 },
     }),
   ],
+  base: "/Portfolio/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

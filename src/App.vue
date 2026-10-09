@@ -43,10 +43,11 @@ onMounted(() => {
                transition-colors duration-200"
             :class="open ? 'bg-transparent' : 'bg-pl-background dark:bg-pd-background'">
             <div>
-                <RouterLink to="/" class="relative inline-block group font-bold">
+                <RouterLink to="/" v-slot="{ isExactActive }" class="relative inline-block group font-bold">
                     Aymane
                     <span
-                        class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"></span>
+                        class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center transition-transform duration-200 ease-out group-hover:scale-x-100"
+                        :class="isExactActive ? 'scale-x-100' : 'scale-x-0'"></span>
                 </RouterLink>
             </div>
 
@@ -94,10 +95,10 @@ onMounted(() => {
         <Transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0"
             enter-to-class="opacity-100" leave-active-class="transition duration-200 ease-in"
             leave-from-class="opacity-100" leave-to-class="opacity-0">
-            <nav v-if="open" class="sm:hidden fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 px-8 text-2xl
-                       bg-white/80 dark:bg-black/80 backdrop-blur-sm text-pl-text dark:text-pd-text">
-                <RouterLink v-for="link in links" :key="link.to" :to="link.to" v-slot="{ isActive }"
-                    :class="{ 'underline underline-offset-8': isActive }" @click="open = false">
+            <nav v-if="open" class="sm:hidden fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 text-2xl
+           bg-pl-background/80 dark:bg-pd-background/80 backdrop-blur-sm text-pl-text dark:text-pd-text">
+                <RouterLink v-for="link in links" :key="link.to" :to="link.to"
+                    active-class="underline underline-offset-8" @click="open = false">
                     {{ link.label }}
                 </RouterLink>
             </nav>

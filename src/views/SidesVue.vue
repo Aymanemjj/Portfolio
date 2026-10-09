@@ -9,7 +9,7 @@ const SIDES_COUNT = PROJECTS.side.length;
     <main class="flex flex-col gap-16">
         <div class="font-bold flex text-3xl">
             <h2 class="text-pl-primary dark:text-pd-primary">
-                Projects <span class="text-pl-secondary dark:text-pd-secondary">[{{ SIDES_COUNT }}]</span>
+                Side <span class="text-pl-secondary dark:text-pd-secondary">[{{ SIDES_COUNT }}]</span>
             </h2>
         </div>
 

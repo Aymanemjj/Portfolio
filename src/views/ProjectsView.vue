@@ -13,12 +13,8 @@ const PROGRAMING_COUNT = PROJECTS.programing.length;
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8  mx-auto">
-            <ProjectCard
-                v-for="project in PROJECTS.programing"
-                :key="project.title"
-                :project="project"
-            />
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8  mx-auto">
+            <ProjectCard v-for="project in PROJECTS.programing" :key="project.title" :project="project" />
         </div>
     </main>
 </template>

@@ -53,25 +53,22 @@ watch(selected, (newVal) => {
     <main class="flex justify-center items-center">
         <div class="p-4 flex sm:flex-row flex-col gap-4 bg-pl-ascent dark:bg-pd-ascent xl:w-2/3">
             <div class="sm:h-64 lg:h-80 xl:h-96 shrink-0">
-              <video
-                src="@/assets/cat.webm"
-                class="h-full w-auto object-contain text-pl-text dark:text-pd-text"
-                autoplay
-                loop
-                muted
-                playsinline
-              ></video>
+                <video src="@/assets/cat.webm" class="h-full w-auto object-contain text-pl-text dark:text-pd-text"
+                    autoplay loop muted playsinline></video>
             </div>
             <div class="w-full  p-2 flex flex-col justify-between items-center gap-4">
                 <div class="w-full text-left">
                     <h1 class="font-bold text-3xl text-pl-primary dark:text-pd-primary">Hallo!</h1>
                     <h2 class="text-pl-text dark:text-pd-text font-thin">
-                        I am <span class="font-bold">Mohamed Aymane Jaafouri</span>, a full-stack web developer <span class="font-bold text-pl-primary dark:text-pd-primary underline">based in Morocco</span>, interested in cs among other fields like design and 3d modeling.
+                        I am <span class="font-bold">Mohamed Aymane Jaafouri</span>, a full-stack web developer <span
+                            class="font-bold text-pl-primary dark:text-pd-primary underline">based in Morocco</span>,
+                        interested in cs among other fields like design and 3d modeling.
                     </h2>
                 </div>
                 <div class="w-full xl:w-2/3 flex flex-col  gap-8">
-                    <div class="text-pl-secondary dark:text-pd-secondary font-bold flex justify-left text-2xl">
-                        <b>&gt; Machine@Aymane cd ~/</b>
+                    <div
+                        class="text-pl-secondary dark:text-pd-secondary font-bold hidden sm:flex justify-center text-2xl">
+                        <b>&gt; cd ~/</b>
                         <b>
                             <span>{{ displayText }}</span>
                             <span v-if="!displayText" class="animate-pulse">_</span>
@@ -79,38 +76,26 @@ watch(selected, (newVal) => {
                         </b>
                     </div>
                     <div class="w-full flex items-center justify-between text-pl-text dark:text-pd-text">
-                        <RouterLink
-                            to="/about"
+                        <RouterLink to="/about"
                             class="relative inline-block text-pl-secondary dark:text-pd-secondary group"
-                            @mouseenter="selected = 'about'"
-                            @mouseleave="selected = null"
-                        >
+                            @mouseenter="selected = 'about'" @mouseleave="selected = null">
                             about
                             <span
-                                class="absolute left-0 -bottom-1 h-px w-full bg-pl-secondary dark:bg-pd-secondary origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"
-                            ></span>
+                                class="absolute left-0 -bottom-1 h-px w-full bg-pl-secondary dark:bg-pd-secondary origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"></span>
                         </RouterLink>
-                        <RouterLink
-                            to="/projects"
+                        <RouterLink to="/projects"
                             class="relative inline-block text-pl-secondary dark:text-pd-secondary group"
-                            @mouseenter="selected = 'projects'"
-                            @mouseleave="selected = null"
-                        >
+                            @mouseenter="selected = 'projects'" @mouseleave="selected = null">
                             projects
                             <span
-                                class="absolute left-0 -bottom-1 h-px w-full bg-pl-secondary dark:bg-pd-secondary origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"
-                            ></span>
+                                class="absolute left-0 -bottom-1 h-px w-full bg-pl-secondary dark:bg-pd-secondary origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"></span>
                         </RouterLink>
-                        <RouterLink
-                            to="/sides"
+                        <RouterLink to="/sides"
                             class="relative inline-block text-pl-secondary dark:text-pd-secondary group"
-                            @mouseenter="selected = 'sides'"
-                            @mouseleave="selected = null"
-                        >
+                            @mouseenter="selected = 'sides'" @mouseleave="selected = null">
                             sides
                             <span
-                                class="absolute left-0 -bottom-1 h-px w-full bg-pl-secondary dark:bg-pd-secondary origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"
-                            ></span>
+                                class="absolute left-0 -bottom-1 h-px w-full bg-pl-secondary dark:bg-pd-secondary origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"></span>
                         </RouterLink>
                     </div>
                 </div>

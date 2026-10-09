@@ -13,16 +13,10 @@ const SIDES_COUNT = PROJECTS.side.length;
             </h2>
         </div>
 
-        <div class="columns-1 lg:columns-2 xl:columns-3 gap-8">
-            <div
-                v-for="project in PROJECTS.side"
-                :key="project.title"
-                class="break-inside-avoid mb-8"
-            >
+        <div class="columns-1 md:columns-2 xl:columns-3 gap-8">
+            <div v-for="project in PROJECTS.side" :key="project.title" class="break-inside-avoid mb-8">
                 <ProjectCard :project="project" />
             </div>
         </div>
     </main>
 </template>
-
-

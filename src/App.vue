@@ -1,12 +1,23 @@
 <script setup lang="ts">
 import { RouterLink, RouterView, useRoute } from "vue-router";
-import { ref, onMounted } from "vue";
-
-const selected = ref<string | null>(null);
+import { ref, watch, onMounted } from "vue";
 
 const ROUTE = useRoute();
 
 const isDark = ref(false);
+const open = ref(false);
+
+const links = [
+    { to: "/about", label: "about" },
+    { to: "/projects", label: "projects" },
+    { to: "/sides", label: "sides" },
+];
+
+// close the burger menu on any navigation
+watch(
+    () => ROUTE.path,
+    () => (open.value = false),
+);
 
 function toggleDark() {
     isDark.value = !isDark.value;
@@ -28,109 +39,76 @@ onMounted(() => {
 
 <template>
     <div class="min-h-screen flex flex-col">
-        <header
-            
-            class="p-2 flex justify-between text-pl-text dark:text-pd-text"
-        >
+        <header class="sticky top-0 z-50 p-2 flex justify-between items-center text-pl-text dark:text-pd-text
+               transition-colors duration-200"
+            :class="open ? 'bg-transparent' : 'bg-pl-background dark:bg-pd-background'">
             <div>
-                <RouterLink
-                    to="/"
-                    class="relative inline-block group font-bold"
-                    @mouseenter="selected = 'about'"
-                    @mouseleave="selected = null"
-                >
+                <RouterLink to="/" class="relative inline-block group font-bold">
                     Aymane
                     <span
-                        class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"
-                    ></span>
+                        class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"></span>
                 </RouterLink>
             </div>
-            <div class="flex gap-8">
-                <nav v-if="ROUTE.path != '/'" class="flex items-center gap-8">
-                    <RouterLink
-                        to="/about"
-                        class="relative inline-block group"
-                        @mouseenter="selected = 'about'"
-                        @mouseleave="selected = null"
-                    >
-                        about
+
+            <div class="flex items-center gap-8">
+                <!-- Desktop nav -->
+                <nav v-if="ROUTE.path != '/'" class="hidden sm:flex items-center gap-8">
+                    <RouterLink v-for="link in links" :key="link.to" :to="link.to" v-slot="{ isActive }"
+                        class="relative inline-block group">
+                        {{ link.label }}
                         <span
-                            class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"
-                        ></span>
-                    </RouterLink>
-                    <RouterLink
-                        to="/projects"
-                        class="relative inline-block group"
-                        @mouseenter="selected = 'projects'"
-                        @mouseleave="selected = null"
-                    >
-                        projects
-                        <span
-                            class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"
-                        ></span>
-                    </RouterLink>
-                    <RouterLink
-                        to="/sides"
-                        class="relative inline-block group"
-                        @mouseenter="selected = 'sides'"
-                        @mouseleave="selected = null"
-                    >
-                        sides
-                        <span
-                            class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100"
-                        ></span>
+                            class="absolute left-0 -bottom-1 h-px w-full bg-pl-text dark:bg-pd-text origin-center transition-transform duration-200 ease-out group-hover:scale-x-100"
+                            :class="isActive ? 'scale-x-100' : 'scale-x-0'"></span>
                     </RouterLink>
                 </nav>
-                <button
-                    @click="toggleDark"
-                    class="cursor-pointer text-pl-text dark:text-pd-text transition-colors"
-                    aria-label="Toggle dark mode"
-                >
-                    <svg
-                        v-if="isDark"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="w-5 h-5"
-                    >
-                        <path
-                            d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54A9 9 0 0 0 12 3Z"
-                        />
+
+                <!-- Dark mode toggle -->
+                <button @click="toggleDark" class="cursor-pointer text-pl-text dark:text-pd-text transition-colors"
+                    aria-label="Toggle dark mode">
+                    <svg v-if="isDark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-5 h-5">
+                        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54A9 9 0 0 0 12 3Z" />
                     </svg>
-                    <svg
-                        v-else
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="w-5 h-5"
-                    >
+                    <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-5 h-5">
                         <path
                             d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-6.66 1.41-1.41M4.93 19.07l1.41-1.41M18.36 18.36l1.41 1.41M4.93 4.93 6.34 6.34"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            fill="none"
-                        />
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" />
                         <circle cx="12" cy="12" r="5" />
+                    </svg>
+                </button>
+
+                <!-- Burger button (mobile only) -->
+                <button v-if="ROUTE.path != '/'" @click="open = !open" class="sm:hidden cursor-pointer"
+                    aria-label="Toggle menu" :aria-expanded="open">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" class="w-6 h-6">
+                        <path v-if="!open" d="M4 6h16M4 12h16M4 18h16" />
+                        <path v-else d="M6 6l12 12M18 6L6 18" />
                     </svg>
                 </button>
             </div>
         </header>
 
-        <!-- <RouterView class="py-8 flex-1" /> -->
+        <!-- Mobile overlay menu -->
+        <Transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0"
+            enter-to-class="opacity-100" leave-active-class="transition duration-200 ease-in"
+            leave-from-class="opacity-100" leave-to-class="opacity-0">
+            <nav v-if="open" class="sm:hidden fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 px-8 text-2xl
+                       bg-white/80 dark:bg-black/80 backdrop-blur-sm text-pl-text dark:text-pd-text">
+                <RouterLink v-for="link in links" :key="link.to" :to="link.to" v-slot="{ isActive }"
+                    :class="{ 'underline underline-offset-8': isActive }" @click="open = false">
+                    {{ link.label }}
+                </RouterLink>
+            </nav>
+        </Transition>
+
         <RouterView class="py-8 flex-1" v-slot="{ Component }">
-            <Transition
-                enter-active-class="transition duration-200 ease-out"
-                enter-from-class="opacity-0 translate-y-5"
-                enter-to-class="opacity-100 translate-y-0"
-                leave-active-class="transition duration-300 ease-in"
-                leave-from-class="opacity-100 translate-y-0"
-                leave-to-class="opacity-0 -translate-y-5"
-                mode="out-in"
-            >
+            <Transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0 translate-y-5"
+                enter-to-class="opacity-100 translate-y-0" leave-active-class="transition duration-300 ease-in"
+                leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-5" mode="out-in">
                 <component :is="Component" />
             </Transition>
         </RouterView>
-        
     </div>
 </template>

@@ -27,6 +27,7 @@
         {
             "title": "ZimaBlue",
             "description": "A home NAS setup using TrueNas",
+            "private" : true,
             "preview": {
                 "type": "image",
                 "thumbnail": "home_nas/thumbnail.webp",

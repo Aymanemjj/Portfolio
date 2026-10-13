@@ -5,6 +5,7 @@ interface Project {
   title: string
   description: string
   link?: string
+  private?: boolean
   preview: {
     thumbnail: string
     alt?: string
@@ -34,20 +35,18 @@ function sendToLink() {
 <template>
   <div class="group font-bold cursor-pointer" @click="sendToLink">
     <div
-      class="p-1 border border-transparent group-hover:border-pl-secondary dark:group-hover:border-pd-secondary transition-colors duration-300"
-    >
-      <img
-        :src="thumbnailSrc"
-        :alt="project.preview.alt || `${project.title} preview`"
-        class="text-pl-text dark:text-pd-text w-full h-auto object-cover transition-all duration-300"
-        loading="lazy"
-        decoding="async"
-      />
+      class="p-1 border border-transparent group-hover:border-pl-secondary dark:group-hover:border-pd-secondary transition-colors duration-300">
+      <img :src="thumbnailSrc" :alt="project.preview.alt || `${project.title} preview`"
+        class="text-pl-text dark:text-pd-text w-full h-auto object-cover transition-all duration-300" loading="lazy"
+        decoding="async" />
     </div>
     <div class="flex flex-col justify-between p-1">
-      <h3 class="text-xl text-pl-primary dark:text-pd-primary font-bold">
-        {{ project.title }}
-      </h3>
+      <div class="flex flex-row justify-between">
+        <h3 class="text-xl text-pl-primary dark:text-pd-primary font-bold">
+          {{ project.title }}
+        </h3>
+        <span class="text-pl-warning dark:text-pd-warning font-bold" v-if="project.private">private</span>
+      </div>
       <div class="flex justify-between">
         <p class="text-sm font-light text-justify text-pl-text dark:text-pd-text">
           {{ project.description }}

@@ -5,7 +5,7 @@
             "description": "A web app for art and artists to roam free",
             "preview": {
                 "type": "image",
-                "thumbnail": "marble/thumbnail.png",
+                "thumbnail": "marble/thumbnail.webp",
                 "images": ["marble_pic1.png"],
                 "alt": ""
             },
@@ -17,7 +17,7 @@
             "description": "A fortune teller in golang",
             "preview": {
                 "type": "image",
-                "thumbnail": "gofortune/thumbnail.png",
+                "thumbnail": "gofortune/thumbnail.webp",
                 "images": [],
                 "alt": ""
             },
@@ -29,7 +29,7 @@
             "description": "A home NAS setup using TrueNas",
             "preview": {
                 "type": "image",
-                "thumbnail": "home_nas/thumbnail.png",
+                "thumbnail": "home_nas/thumbnail.webp",
                 "images": [],
                 "alt": ""
             },
@@ -41,7 +41,7 @@
             "description": "A machin learning model for clasifying clients based on there RFM",
             "preview": {
                 "type": "image",
-                "thumbnail": "ml_client_classification/thumbnail.png",
+                "thumbnail": "ml_client_classification/thumbnail.webp",
                 "images": [],
                 "alt": ""
             },
@@ -53,7 +53,7 @@
             "description": "youtube chanel videos data pipeline",
             "preview": {
                 "type": "image",
-                "thumbnail": "youtube_pipeline/thumbnail.png",
+                "thumbnail": "youtube_pipeline/thumbnail.webp",
                 "images": [],
                 "alt": ""
             },
@@ -68,7 +68,7 @@
             "description": "A simple 3d low poly model",
             "preview": {
                 "type": "3d_scene",
-                "thumbnail": "loveChan/thumbnail.png",
+                "thumbnail": "loveChan/thumbnail.webp",
                 "images": [],
                 "model": "loveChan/model.glb",
                 "alt": "3D low poly model"
@@ -81,7 +81,7 @@
             "description": "Outer wilds fan-poster",
             "preview": {
                 "type": "image",
-                "thumbnail": "posters/outer_wildes.jpg",
+                "thumbnail": "posters/outer_wildes.webp",
                 "images": [],
                 "alt": "Outer wildes"
             },
@@ -93,7 +93,7 @@
             "description": "Toon-shader vending machine",
             "preview": {
                 "type": "3D_scene",
-                "thumbnail": "vendingMachine/thumbnail.jpg",
+                "thumbnail": "vendingMachine/thumbnail.webp",
                 "images": [],
                 "model": "loveChan/model.glb",
                 "alt": "Vending machine"
@@ -106,7 +106,7 @@
             "description": "Donut",
             "preview": {
                 "type": "3D_scene",
-                "thumbnail": "donut/thumbnail.jpg",
+                "thumbnail": "donut/thumbnail.webp",
                 "images": [],
                 "model": "loveChan/model.glb",
                 "alt": "Donut"

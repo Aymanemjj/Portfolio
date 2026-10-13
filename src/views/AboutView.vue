@@ -139,7 +139,7 @@
                     <h3 class="text-pl-secondary dark:text-pd-secondary text-xl w-40 shrink-0">
                         cv:
                     </h3>
-                    <a class="hover:underline" href="/cv.pdf" target="_blank" rel="noopener noreferrer">cv</a>
+                    <a class="hover:underline" href="/Portfolio/cv.pdf" target="_blank" rel="noopener noreferrer">cv</a>
                 </div>
             </div>
         </section>

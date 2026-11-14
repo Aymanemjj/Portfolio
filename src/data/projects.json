@@ -38,7 +38,7 @@
             "tools": ["TrueNas", "Linux", "Docker", "Tailscale"]
         },
         {
-            "title": "ML_client_classifier",
+            "title": "ML client classifier",
             "description": "A machin learning model for clasifying clients based on there RFM",
             "preview": {
                 "type": "image",
@@ -50,7 +50,7 @@
             "tools": ["Python", "Pandas", "Seaborn", "Scikit-learn"]
         },
         {
-            "title": "Youtube data pipe_line",
+            "title": "Youtube data pipe-line",
             "description": "youtube chanel videos data pipeline",
             "preview": {
                 "type": "image",
@@ -60,6 +60,18 @@
             },
             "link": "https://github.com/Aymanemjj/pipeline_youtube",
             "tools": ["Python", "Pandas", "Docker", "Apache/Airflow"]
+        },
+        {
+            "title": "RayVision",
+            "description": "Pneumonia detection with a neural network",
+            "preview": {
+                "type": "image",
+                "thumbnail": "ray_vision/thumbnail.webp",
+                "images": [],
+                "alt": ""
+            },
+            "link": "https://github.com/Aymanemjj/RayVisionAI",
+            "tools": ["Python", "Pandas", "TensorFlow", "DNN", "Fine tuning"]
         }
     ],
     "side": [

@@ -43,7 +43,7 @@
                     <h3 class="text-pl-secondary dark:text-pd-secondary text-xl w-40 shrink-0">
                         data & AI:
                     </h3>
-                    <p>pandas / numpy / matplotlib / seaborn / schikit_learn</p>
+                    <p>pandas / numpy / matplotlib / seaborn / schikit_learn / TensorFlow / Keras / TransferLearning / DNNs / ML / ComputerVision</p>
 
                     <!--                     <p>MachineLearning (Classification, Regression, Clustering) / Deep Learning (TensorFlow, Keras, PyTorch) / NLP / Computer Vision / Analyse de donnees / Evaluation de mode LES</p>
  -->
